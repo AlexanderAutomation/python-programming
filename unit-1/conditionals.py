@@ -46,7 +46,7 @@ for num in range (1,51):
  else:
     print (num)
 '''
-
+'''
 name = 'fizzbuzz'
 
 if name.length > 4:
@@ -54,6 +54,41 @@ if name.length > 4:
 
 if name.length > 6:
     print('longer than 6')
+'''
+'''
+#usign 'and' and 'or' in conditionals
+num = 15
 
+#display a message if number is odd and also less than 20
+if num % 2 == 1 and num < 20:
+    print('odd number less than 20')
+else:
+    print('something else')
 
+  '''
+'''
+num = 10
 
+print(num)
+'''
+#group print statements together
+num = 24
+if num % 2 == 1 or (num % 2 == 0 and num >= 6 and num <= 20):
+  print('weird')
+if num % 2 == 0 and (num >= 2 and num <= 5) or (num % 2 == 0 and num > 20):
+  print('not weird')
+
+#nested if
+city = 'toronto'
+name = 'alexander'
+if city == 'toronto':
+  if name == 'alexander':
+    print('welcome, newcomer!!')
+  elif name == 'connor':
+    print('Wassup')
+  else:
+    print('hello{}'.format(name))
+else:
+    print('Im not familiar with your city')
+
+   
