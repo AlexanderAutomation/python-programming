@@ -207,14 +207,14 @@ while True:
     '''
 # List less than ten
 
-'''Take a list, say for example this one'''
+'''Take a list, say for example this one
 
 total_a = 0
 aa = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-'''and write a program that prints out all the elements 
-of the list that are less than 5.'''
-'''
+and write a program that prints out all the elements 
+of the list that are less than 5.
+
 for a in aa:
     if a < 5:
         print(a)
@@ -273,3 +273,67 @@ age = input('what is your age: ')
 year = (100 - int(age)) + 2019
 print(year)
 '''
+#Divisors
+'''Create a program that asks the user 
+for a number and then prints out a list of all the 
+divisors of that number. (If you don’t know what a divisor is, 
+it is a number that divides evenly into another number. 
+For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
+'''
+
+#sudocode
+
+'''input variable number
+if x % variable == 0:
+    insert x in the list.
+use variable number to print list'''
+
+'''
+num = int(input("Please choose a number to divide: "))
+
+listRange = list(range(1,num+1))
+
+divisorList = []
+
+for number in listRange:
+    if num % number == 0:
+        divisorList.append(number)
+
+print(divisorList)
+
+'''
+#listOverlap
+
+'''
+alist = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+blist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+x = []
+
+write a program that returns a list that contains only the 
+elements that are common between the lists (without duplicates). 
+Make sure your program works on two lists of different sizes.
+
+#sudocode
+
+read two lists
+return values that are common in the two list just once
+
+for a in alist:
+    if a in blist:
+        if a not in x:
+            x.append(a)
+
+print(x)
+
+'''
+
+
+
+
+
+
+
+
+
+
+
